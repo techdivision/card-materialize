@@ -1,0 +1,3 @@
+prototype(TechDivision.Card:Augmenter.ImageAugmenter) {
+    class = 'card-image'
+}

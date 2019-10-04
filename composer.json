@@ -1,0 +1,17 @@
+{
+  "description": "TechDivision.Card.Materialize",
+  "type": "neos-package",
+  "name": "techdivision/card-materialize",
+  "keywords": ["card", "teaser", "neos", "nodetypes", "materialize-css"],
+  "license": [
+    "GPL-3.0-or-later"
+  ],
+  "require": {
+    "techdivision/card-shuffle" : "^1.0.0"
+  },
+  "extra": {
+    "neos": {
+      "package-key": "TechDivision.Card.Materialize"
+    }
+  }
+}

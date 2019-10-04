@@ -1,0 +1,3 @@
+prototype(TechDivision.Card:Augmenter.PrimaryTitleAugmenter) {
+    class = 'card-title'
+}

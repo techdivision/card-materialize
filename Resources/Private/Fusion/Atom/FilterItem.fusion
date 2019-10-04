@@ -1,0 +1,15 @@
+prototype(TechDivision.Card.Materialize:Atom.FilterItem) < prototype(Neos.Fusion:Component) {
+
+    //api
+    filter = ''
+    filterGroup = ''
+    cardFilterRequestArguments = ''
+
+    renderer = afx`
+        <label for={props.filter.identifier}>
+            <input type="checkbox" checked={CardShuffle.Checkbox.isActive(props.filter.identifier,props.cardFilterRequestArguments)} name={'cardFilter[' + props.filterGroup.identifier + '][]'} value={props.filter.identifier} id={props.filter.identifier} />
+            <span>{props.filter.label}</span>
+        </label>
+    `
+}
+

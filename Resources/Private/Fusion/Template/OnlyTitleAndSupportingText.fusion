@@ -1,0 +1,12 @@
+prototype(TechDivision.Card:Template.Card.OnlyTitleAndSupportingText)  {
+
+    renderer >
+    renderer = afx`
+        <TechDivision.Card.Materialize:Augmenter.CardContent>
+            <TechDivision.Card:Atom.PrimaryTitle cardTitle={props.cardTitle} secondaryText={props.secondaryText} @if.isFalse={!props.linkedTitleDisplayCondition} />
+            <TechDivision.Card:Atom.LinkedPrimaryTitle targetUri={props.targetUri} cardTitle={props.cardTitle} secondaryText={props.secondaryText} @if.isTrue={props.linkedTitleDisplayCondition} />
+            <TechDivision.Card:Atom.SupportingText supportingText={props.supportingText} @if.isTrue={props.supportingTextDisplayCondition} />
+        </TechDivision.Card.Materialize:Augmenter.CardContent>
+        <TechDivision.Card:Atom.Actions targetUri={props.targetUri} buttonText={props.buttonText} />
+    `
+}

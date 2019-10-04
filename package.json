@@ -1,0 +1,9 @@
+{
+  "name": "techdivision_card-materialize",
+  "description": "techdivision_card-materialize dependencies",
+  "version": "1.0.0",
+  "author": "TechDivision Neos Team <neos@techdivision.com>",
+  "dependencies": {
+    "materialize-css": "^1.0.0-rc.2"
+  }
+}

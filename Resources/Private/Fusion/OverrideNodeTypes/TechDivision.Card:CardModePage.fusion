@@ -1,0 +1,8 @@
+prototype(TechDivision.Card:CardModePage) {
+    head.stylesheets.cardStyleSheetBootstrap >
+    head.stylesheets.cardModeStylesheetBootstrap = TechDivision.Card:Atom.Stylesheet {
+        stylesheet = Neos.Fusion:ResourceUri {
+            path = 'resource://TechDivision.Card.Materialize/Public/Styles/Materialize.css'
+        }
+    }
+}

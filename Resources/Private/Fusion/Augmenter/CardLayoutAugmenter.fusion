@@ -1,0 +1,3 @@
+prototype(TechDivision.Card:Augmenter.CardLayoutAugmenter) {
+    class = 'card'
+}

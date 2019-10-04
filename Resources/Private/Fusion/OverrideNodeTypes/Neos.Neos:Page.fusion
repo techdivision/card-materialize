@@ -1,0 +1,28 @@
+prototype(Neos.Neos:Page) {
+    head.stylesheets.cardStyleSheetMaterialize = TechDivision.Card:Atom.Stylesheet {
+        stylesheet = Neos.Fusion:ResourceUri {
+            path = 'resource://TechDivision.Card.Materialize/Public/Styles/MaterializeNecessaryParts.css'
+        }
+    }
+
+    body.javascripts.materializeScript = Neos.Fusion:Tag {
+        @if.cardShufflePresent = ${q(node).find('[instanceof TechDivision.Card.Decks:DeckMixin]').property('filterIsVisible')}
+        tagName = 'script'
+        attributes.src = Neos.Fusion:ResourceUri {
+            path = 'resource://TechDivision.Card.Materialize/Public/JavaScript/Scripts.min.js'
+        }
+        @position = 'before materializeInitScript'
+    }
+
+    body.javascripts.materializeInitScript = Neos.Fusion:Tag {
+        @if.cardShufflePresent = ${q(node).find('[instanceof TechDivision.Card.Decks:DeckMixin]').property('filterIsVisible')}
+        tagName = 'script'
+        attributes.src = Neos.Fusion:ResourceUri {
+            path = 'resource://TechDivision.Card.Materialize/Public/JavaScript/InitializeFilterDropdown.js'
+        }
+    }
+}
+
+
+
+

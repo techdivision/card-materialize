@@ -1,0 +1,19 @@
+prototype(TechDivision.Card.Shuffle:Integration.DeckShuffle) {
+
+    renderer >
+    renderer = afx`
+        <form method="get" class="shuffle--container">
+            <Neos.Fusion:Loop items={props.availableFilters} itemName="filterGroup">
+                <a class="dropdown-trigger btn" href="#" data-target={filterGroup.label}>{filterGroup.label}</a>
+                    <ul id={filterGroup.label} class="dropdown-content">
+                        <Neos.Fusion:Loop items={filterGroup.taxonomies} itemName="taxonomy">
+                            <li>
+                                <TechDivision.Card.Materialize:Atom.FilterItem filter={taxonomy} filterGroup={filterGroup} cardFilterRequestArguments={props.cardFilterRequestArguments} />
+                            </li>
+                        </Neos.Fusion:Loop>
+                    </ul>
+            </Neos.Fusion:Loop>
+            <button type="submit" class="waves-effect waves-light btn">{props.filterCards}</button>
+        </form>
+    `
+}

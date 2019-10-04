@@ -1,0 +1,3 @@
+prototype(TechDivision.Card.Materialize:Augmenter.CardContent) < prototype(Neos.Fusion:Augmenter){
+    class = 'card-content'
+}
