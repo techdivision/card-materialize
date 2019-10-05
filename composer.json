@@ -1,7 +1,7 @@
 {
-  "description": "TechDivision.Card.Materialize",
-  "type": "neos-package",
   "name": "techdivision/card-materialize",
+  "type": "neos-package",
+  "description": "Adds materialize-css styling to Card, Card.Deck and Card.Shuffle. Serves as best-practice for your own card-styling.",
   "keywords": ["card", "teaser", "neos", "nodetypes", "materialize-css"],
   "license": [
     "GPL-3.0-or-later"
